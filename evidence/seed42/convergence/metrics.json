@@ -1,0 +1,7 @@
+{
+  "loose_max_error": 1.147327239892082e-05,
+  "tight_max_error": 6.946050401523962e-10,
+  "max_difference": 1.1472578556215307e-05,
+  "wall_seconds": 0.008275899999944158,
+  "seed": 42
+}

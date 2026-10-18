@@ -1,0 +1,10 @@
+{
+  "highRisk": true,
+  "reasons": [
+    "User explicitly requested creating and uploading a new GitHub repository",
+    "User explicitly requested Windows and Ubuntu execution documentation; CI matrix changed accordingly"
+  ],
+  "autoStopRequired": true,
+  "humanApproved": true,
+  "largeDiff": true
+}

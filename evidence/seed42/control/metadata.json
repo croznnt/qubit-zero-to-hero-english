@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-18T15:52:17.112428+00:00",
+  "experiment": "control",
+  "python": "3.13.6",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "source_commit": "9519295084867d0f05d01ed0634e1ed214952ed6",
+  "working_tree_dirty": false,
+  "versions": {
+    "qutip": "5.3.1",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "units": {
+    "time": "microsecond",
+    "angular_frequency": "radian/microsecond",
+    "hbar": 1
+  },
+  "solver": null
+}

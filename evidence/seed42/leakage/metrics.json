@@ -1,0 +1,9 @@
+{
+  "final_target_population": 0.9886833327384189,
+  "final_leakage": 0.007475079283244254,
+  "maximum_leakage": 0.008595502522064698,
+  "anharmonicity_rad_per_us": 25.132741228718345,
+  "two_level_ideal_target_population": 1.0,
+  "wall_seconds": 0.004419900000129928,
+  "seed": 42
+}

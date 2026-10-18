@@ -1,0 +1,43 @@
+{
+  "commands": [
+    {
+      "command": "python -m pytest -q (English src)",
+      "status": "pass",
+      "exitCode": 0,
+      "timestamp": "2026-10-18T23:25:27.066403+00:00",
+      "summary": "157 passed; independent repeat also157passed"
+    },
+    {
+      "command": "python -m qubit_course.labs check all --solution",
+      "status": "pass",
+      "exitCode": 0,
+      "timestamp": "2026-10-18T23:25:27.066417+00:00",
+      "summary": "All10 references passed"
+    },
+    {
+      "command": "python -m compileall -q src exercises",
+      "status": "pass",
+      "exitCode": 0,
+      "timestamp": "2026-10-18T23:25:27.066420+00:00",
+      "summary": "Compilation passed"
+    },
+    {
+      "command": "Source and local Markdown link validation",
+      "status": "pass",
+      "exitCode": 0,
+      "timestamp": "2026-10-18T23:25:27.066422+00:00",
+      "summary": "Scientific source preserved; local links resolve; English prose verified"
+    },
+    {
+      "command": "CI YAML matrix parse",
+      "status": "pass",
+      "exitCode": 0,
+      "timestamp": "2026-10-18T23:25:27.066424+00:00",
+      "summary": "Windows/Ubuntu24.04 times Python3.12/3.13; unique artifact names"
+    }
+  ],
+  "beforeAfter": {
+    "before": "Local Vietnamese course",
+    "after": "Reviewed English course with platform-specific setup and CI matrix"
+  }
+}

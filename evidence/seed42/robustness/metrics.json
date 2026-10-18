@@ -1,0 +1,16 @@
+{
+  "robust_training": true,
+  "training_infidelity": 0.011328743116176487,
+  "validation_mean_overlap": 0.9846647230238615,
+  "validation_min_overlap": 0.971263377915696,
+  "baseline_validation_mean_overlap": 0.9713896447487894,
+  "baseline_validation_min_overlap": 0.9497789546588415,
+  "slot_split_operator_error": 9.399410620858073e-16,
+  "optimizer_success": true,
+  "optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+  "objective_evaluations": 429,
+  "amplitude_bound_rad_per_us": 6.283185307179586,
+  "duration_us": 1.0,
+  "wall_seconds": 1.6023564999998143,
+  "seed": 42
+}

@@ -1,0 +1,8 @@
+{
+  "probability_one": 0.24999999999999994,
+  "measured_fraction_one": 0.262,
+  "shots": 2000,
+  "bloch_norm": 1.0,
+  "wall_seconds": 0.0003311000000394415,
+  "seed": 42
+}

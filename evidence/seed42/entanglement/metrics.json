@@ -1,0 +1,8 @@
+{
+  "reduced_purity": 0.4999999999999998,
+  "entanglement_entropy_bits": 1.0,
+  "bell_xx": 0.9999999999999998,
+  "classical_xx": 0.0,
+  "wall_seconds": 0.001101399999924979,
+  "seed": 42
+}

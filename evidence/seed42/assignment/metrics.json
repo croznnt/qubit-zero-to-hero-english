@@ -1,0 +1,18 @@
+{
+  "num_qubits": 6,
+  "depth": 2,
+  "angle_order": "gamma1,beta1,gamma2,beta2",
+  "expected_penalized_energy": 11.010071927437819,
+  "feasible_probability": 0.43597228629330853,
+  "exact_optimal_cost": 2.0,
+  "exact_optimal_bits": "100010",
+  "most_probable_feasible_bits": "100010",
+  "most_probable_feasible_cost": 2.0,
+  "sampled_feasible_fraction": 0.431,
+  "best_sampled_feasible_cost": 2.0,
+  "optimizer_success": true,
+  "optimizer_message": "Optimization terminated successfully.",
+  "total_objective_evaluations": 1094,
+  "wall_seconds": 1.2748564000000897,
+  "seed": 42
+}

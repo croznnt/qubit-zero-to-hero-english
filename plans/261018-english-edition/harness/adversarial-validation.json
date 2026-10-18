@@ -1,0 +1,11 @@
+{
+  "decision": "PASS",
+  "disprovenClaims": [],
+  "unverifiedClaims": [],
+  "missingProof": [],
+  "reachableRegressions": [],
+  "limitations": [
+    "Static platform review is not Ubuntu execution proof; remote matrix results to be checked after publication",
+    "Historical artifacts are clearly labeled and not claimed as new simulations"
+  ]
+}

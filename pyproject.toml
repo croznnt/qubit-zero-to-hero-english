@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qubit-zero-to-hero"
+version = "0.1.0"
+description = "A QuTiP course from first qubit to control and UAV assignment research"
+requires-python = ">=3.11"
+dependencies = ["qutip==5.3.1", "numpy>=2,<3", "scipy>=1.13,<2", "matplotlib>=3.9,<4"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[project.scripts]
+qubit-course = "qubit_course.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

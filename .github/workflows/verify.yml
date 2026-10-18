@@ -1,0 +1,25 @@
+name: Verify course
+on: [push, pull_request]
+jobs:
+  physics:
+    name: ${{ matrix.os }} / Python ${{ matrix.python }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-24.04]
+        python: ['3.12', '3.13']
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -r requirements-lock.txt
+      - run: python -m pip install -e . --no-deps
+      - run: python -m pytest
+      - run: python -m qubit_course.labs check all --solution --report runs/lab-feedback.json
+      - run: python -m qubit_course.cli all --seed 42 --output runs/ci
+      - uses: actions/upload-artifact@v4
+        with:
+          name: course-run-${{ matrix.os }}-python-${{ matrix.python }}
+          path: runs/

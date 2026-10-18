@@ -1,0 +1,28 @@
+{
+  "skill": "ck:cook",
+  "mode": "auto",
+  "task": "Publish an independent English QuTiP course with Windows and Ubuntu instructions",
+  "acceptanceCriteria": [
+    "Complete English lessons and exercises",
+    "Preserve scientific code and dependencies",
+    "Document native Windows and Ubuntu workflows",
+    "Verify tests and platform CI",
+    "Create new GitHub repository requested by user"
+  ],
+  "touchpoints": [
+    "README.md",
+    "lessons/",
+    "exercises/",
+    "docs/",
+    ".github/workflows/verify.yml"
+  ],
+  "publicContracts": [
+    "Physics functions and CLIs unchanged",
+    "New independent repository identity"
+  ],
+  "blastRadius": [
+    "New public course repository",
+    "CI verification"
+  ],
+  "scoutSummary": "New edition copied from reviewed local course; scientific source preserved, prose translated, CI matrix expanded."
+}
