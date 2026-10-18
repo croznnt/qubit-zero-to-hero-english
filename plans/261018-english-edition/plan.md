@@ -1,6 +1,6 @@
 ---
 title: Independent English course edition
-status: in-progress
+status: completed
 priority: P1
 effort: medium
 branch: main
@@ -33,8 +33,13 @@ Independent agents own lesson translation, exercise translation, and six support
 | Translate and review English learner-facing documentation | completed |
 | Verify source equivalence, tests, CLI and local links | completed |
 | Add explicit Windows/Ubuntu instructions and CI matrix | completed |
-| Publish and verify new GitHub repository | pending |
+| Publish and verify new GitHub repository | completed |
+| Verify remote Windows/Ubuntu CI matrix | completed |
 
 ## Scope update on October 19, 2026
 
 The user requested Windows and Ubuntu execution instructions. Two full platform guides and matching quick starts are included. The workflow change is intentional and excluded from source-equivalence assertions; scientific code remains unchanged. Original translation review covers the prior snapshot; platform additions are verified separately through documentation checks and the new CI matrix.
+
+## Publication
+
+Published on October 19, 2026 at https://github.com/croznnt/qubit-zero-to-hero-english, public, main branch. Initial source commit: b42b285a86f20bcc14f2321e199df4a3131c88c5. CI run: https://github.com/croznnt/qubit-zero-to-hero-english/actions/runs/39176530736. All four remote matrix jobs passed, including dependency installation, tests, ten references and ten full experiments. See evidence/english-edition/ci-result.json.

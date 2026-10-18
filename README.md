@@ -52,7 +52,7 @@ python3 -m venv .venv
 
 Direct interpreter paths avoid activation ambiguity. To use the shorter `python` commands in later lessons, activate with `.\.venv\Scripts\Activate.ps1` on Windows or `source .venv/bin/activate` on Ubuntu. Recreate `.venv` separately on each operating system; do not copy it between machines.
 
-CI is configured for **Windows and Ubuntu 24.04**, each with Python **3.12 and 3.13**. See [validation](docs/VALIDATION.md) for actual completed verification rather than assuming a configured job has passed.
+CI passed on **Windows and Ubuntu 24.04**, each with Python **3.12 and 3.13**, for the published source revision. See the [verified run](https://github.com/croznnt/qubit-zero-to-hero-english/actions/runs/39176530736) and [validation report](docs/VALIDATION.md) for scope and evidence.
 
 ## 📖 Learning path
 

@@ -1,5 +1,20 @@
 # English-edition validation
 
+## Verified Windows and Ubuntu CI
+
+On October 19, 2026, [GitHub Actions run 39176530736](https://github.com/croznnt/qubit-zero-to-hero-english/actions/runs/39176530736) completed successfully for source commit `b42b285a86f20bcc14f2321e199df4a3131c88c5`:
+
+| Operating system | Python | Result |
+| :--- | :--- | :--- |
+| Windows (`windows-latest`) | 3.12 | Passed |
+| Windows (`windows-latest`) | 3.13 | Passed |
+| Ubuntu 24.04 | 3.12 | Passed |
+| Ubuntu 24.04 | 3.13 | Passed |
+
+Each job installed the pinned dependencies and editable package, ran the full test suite, checked all ten reference solutions, ran all ten complete experiments, and uploaded the run artifacts. The machine-readable record is [ci-result.json](../evidence/english-edition/ci-result.json).
+
+These CI jobs validate the Python package workflow on clean hosted runners. They use actions/setup-python rather than manually provisioning Python with Ubuntu apt or the Windows installer. The platform guides document those separate user setup steps. No local native Ubuntu machine was used.
+
 Fresh local verification on October 18, 2026: **157 tests passed**, including eight original physics tests and 149 guided-lab cases. All ten reference solutions passed the actual feedback CLI. Python compilation checks completed successfully.
 
 Verification reused the original course's isolated environment (Windows, Python 3.13.6, QuTiP 5.3.1), with `PYTHONPATH` explicitly set to this edition's `src`. Neither the original repository nor its installed dependencies were modified. A new clone should create its own virtual environment using this repository's README.
@@ -12,11 +27,11 @@ python -m qubit_course.labs check all --solution --report runs/english-reference
 python -m compileall -q src exercises
 ```
 
-The sandbox required an explicit writable pytest temporary directory. The primary verification run passed in 6.17 seconds; this is execution evidence, not a performance benchmark. Remote GitHub Actions results are separate and must be checked after publication.
+The sandbox required an explicit writable pytest temporary directory. The primary verification run passed in 6.17 seconds; this is execution evidence, not a performance benchmark. The completed remote CI result is recorded above, separately from this local run.
 
 Scientific Python source, exercise starters and solutions, tests, project dependencies, and historical evidence are byte-identical to the original local course at commit `b5d4fbc`. See the [SHA-256 equivalence record](../evidence/english-edition/source-equivalence.json) and [source provenance](SOURCE_PROVENANCE.md).
 
-On October 19, 2026, explicit Windows and Ubuntu walkthroughs were added. CI was intentionally extended to Windows and Ubuntu 24.04 with Python 3.12 and 3.13, so the workflow is excluded from byte-equivalence claims. Ubuntu commands have not been executed locally; remote CI results will be recorded after publication.
+On October 19, 2026, explicit Windows and Ubuntu walkthroughs were added. CI was intentionally extended to Windows and Ubuntu 24.04 with Python 3.12 and 3.13, so the workflow is excluded from byte-equivalence claims. No native Ubuntu session was executed locally; the completed remote Ubuntu jobs are documented above.
 
 The archived seed42 outputs below come from the original course. Their metadata refers to the original local implementation commit, not a commit in this independent English repository. Translation does not turn those historical outputs into newly generated simulations.
 
