@@ -23,122 +23,122 @@ A\in\mathbb C^{m\times n},\quad v\in\mathbb C^{n\times1},\quad Av\in\mathbb C^{m
 v=\begin{pmatrix}1\\ i\end{pmatrix},\qquad \|v\|=\sqrt{|1|^2+|i|^2}=\sqrt2\\[12pt]u=\frac{v}{\|v\|}=\frac1{\sqrt2}\begin{pmatrix}1\\ i\end{pmatrix},\qquad\|u\|=1
 \end{gathered}\]\vfill\null
 \newpage
-% Slide 5: Transpose, conjugate and adjoint
+% Slide 6: Transpose, conjugate and adjoint
 \null\vfill\[\begin{gathered}
 v=\begin{pmatrix}1\\i\end{pmatrix},\quad v^{\mathsf T}=\begin{pmatrix}1&i\end{pmatrix},\quad v^\dagger=\begin{pmatrix}1&-i\end{pmatrix}\\[12pt]A^\dagger=(A^*)^{\mathsf T},\qquad (AB)^\dagger=B^\dagger A^\dagger
 \end{gathered}\]\vfill\null
 \newpage
-% Slide 6: The complex inner product
+% Slide 7: The complex inner product
 \null\vfill\[\begin{gathered}
 \langle u,v\rangle=u^\dagger v=\sum_{j=1}^{n}u_j^*v_j\\[12pt]\langle v,u\rangle=\langle u,v\rangle^*
 \end{gathered}\]\vfill\null
 \newpage
-% Slide 7: Norm and overlap bound
+% Slide 8: Norm and overlap bound
 \null\vfill\[\begin{gathered}
 \|v\|^2=\langle v,v\rangle=\sum_j|v_j|^2\geq0\\[12pt]|\langle u,v\rangle|\leq\|u\|\,\|v\|
 \end{gathered}\]\vfill\null
 \newpage
-% Slide 8: Example 2 · A complex orthogonality check
+% Slide 9: Example 2 · A complex orthogonality check
 \null\vfill\[\begin{gathered}
 u=\frac1{\sqrt2}\begin{pmatrix}1\\ i\end{pmatrix},\quad v=\frac1{\sqrt2}\begin{pmatrix}i\\1\end{pmatrix}\\[12pt]u^\dagger v=\frac12\bigl(1\cdot i+(-i)\cdot1\bigr)=0
 \end{gathered}\]\vfill\null
 \newpage
-% Slide 9: Outer products are operators
+% Slide 10: Outer products are operators
 \null\vfill\[\begin{gathered}
 u\in\mathbb C^{n\times1},\quad v^\dagger\in\mathbb C^{1\times n}\\[12pt]uv^\dagger\in\mathbb C^{n\times n},\qquad (uv^\dagger)_{ij}=u_i v_j^*
 \end{gathered}\]\vfill\null
 \newpage
-% Slide 10: Example 3 · A rank-one projector
+% Slide 11: Example 3 · A rank-one projector
 \null\vfill\[\begin{gathered}
 P=uu^\dagger=\frac12\begin{pmatrix}1&-i\\i&1\end{pmatrix}\\[12pt]P^\dagger=P,\quad P^2=P,\quad Pu=u,\quad Pv=0
 \end{gathered}\]\vfill\null
 \newpage
-% Slide 11: Hermitian operators
+% Slide 13: Hermitian operators
 \null\vfill\[\begin{gathered}
 A^\dagger=A\\[12pt]Z=\begin{pmatrix}1&0\\0&-1\end{pmatrix},\qquad Y=\begin{pmatrix}0&-i\\i&0\end{pmatrix}
 \end{gathered}\]\vfill\null
 \newpage
-% Slide 12: Why Hermitian expectations are real
+% Slide 14: Why Hermitian expectations are real
 \null\vfill\[\begin{gathered}
 a=v^\dagger Av\\[10pt]a^*=(v^\dagger Av)^\dagger=v^\dagger A^\dagger v=v^\dagger Av=a
 \end{gathered}\]\vfill\null
 \newpage
-% Slide 13: Unitary operators preserve inner products
+% Slide 15: Unitary operators preserve inner products
 \null\vfill\[\begin{gathered}
 U^\dagger U=I,\qquad U^{-1}=U^\dagger\\[12pt]\langle Uu,Uv\rangle=u^\dagger U^\dagger Uv=u^\dagger v
 \end{gathered}\]\vfill\null
 \newpage
-% Slide 14: Hermitian and unitary are different tests
+% Slide 17: Hermitian and unitary are different tests
 \null\vfill\[\begin{gathered}
 Z^\dagger=Z,\quad Z^\dagger Z=I\\[10pt](2Z)^\dagger=2Z,\quad (2Z)^\dagger(2Z)=4I\\[10pt]U=\operatorname{diag}(e^{-i\theta},e^{i\theta}),\quad U^\dagger U=I
 \end{gathered}\]\vfill\null
 \newpage
-% Slide 15: Eigenvalues and eigenvectors
+% Slide 18: Eigenvalues and eigenvectors
 \null\vfill\[\begin{gathered}
 Av=\lambda v,\qquad v\neq0\\[12pt](A-\lambda I)v=0,\qquad \det(A-\lambda I)=0
 \end{gathered}\]\vfill\null
 \newpage
-% Slide 16: Hermitian eigensolvers and degeneracy
+% Slide 19: Hermitian eigensolvers and degeneracy
 \null\vfill\[\begin{gathered}
 AQ=Q\Lambda,\qquad Q^\dagger Q=I,\qquad \Lambda=\operatorname{diag}(\lambda_1,\ldots,\lambda_n)
 \end{gathered}\]\vfill\null
 \newpage
-% Slide 17: Spectral decomposition
+% Slide 20: Spectral decomposition
 \null\vfill\[\begin{gathered}
 A=Q\Lambda Q^\dagger=\sum_{k=1}^{n}\lambda_k\,|q_k\rangle\langle q_k|\\[12pt]I=\sum_{k=1}^{n}|q_k\rangle\langle q_k|
 \end{gathered}\]\vfill\null
 \newpage
-% Slide 18: Example 4 · The spectrum of Pauli X
+% Slide 21: Example 4 · The spectrum of Pauli X
 \null\vfill\[\begin{gathered}
 X=\begin{pmatrix}0&1\\1&0\end{pmatrix},\quad |+\rangle=\frac1{\sqrt2}\begin{pmatrix}1\\1\end{pmatrix},\quad |-\rangle=\frac1{\sqrt2}\begin{pmatrix}1\\-1\end{pmatrix}\\[12pt]X|+\rangle=|+\rangle,\quad X|-\rangle=-|-\rangle,\quad X=P_+-P_-
 \end{gathered}\]\vfill\null
 \newpage
-% Slide 19: Functions of a Hermitian matrix
+% Slide 23: Functions of a Hermitian matrix
 \null\vfill\[\begin{gathered}
 A=Q\Lambda Q^\dagger\quad\Longrightarrow\quad f(A)=Qf(\Lambda)Q^\dagger\\[12pt]f(\Lambda)=\operatorname{diag}\bigl(f(\lambda_1),\ldots,f(\lambda_n)\bigr)
 \end{gathered}\]\vfill\null
 \newpage
-% Slide 20: The matrix exponential series
+% Slide 24: The matrix exponential series
 \null\vfill\[\begin{gathered}
 e^A=\sum_{k=0}^{\infty}\frac{A^k}{k!}=I+A+\frac{A^2}{2!}+\frac{A^3}{3!}+\cdots
 \end{gathered}\]\vfill\null
 \newpage
-% Slide 21: Pauli powers separate even and odd terms
+% Slide 26: Pauli powers separate even and odd terms
 \null\vfill\[\begin{gathered}
 X^2=I,\qquad X^{2k}=I,\qquad X^{2k+1}=X\\[12pt]e^{-iaX}=\left[\sum_{k=0}^\infty\frac{(-1)^ka^{2k}}{(2k)!}\right]I-i\left[\sum_{k=0}^\infty\frac{(-1)^ka^{2k+1}}{(2k+1)!}\right]X
 \end{gathered}\]\vfill\null
 \newpage
-% Slide 22: A closed form for an X rotation
+% Slide 27: A closed form for an X rotation
 \null\vfill\[\begin{gathered}
 R_x(\theta)=e^{-i\theta X/2}=\cos\!\left(\frac\theta2\right)I-i\sin\!\left(\frac\theta2\right)X\\[12pt]R_x(\pi)|0\rangle=-i|1\rangle,\qquad R_x(0)=I
 \end{gathered}\]\vfill\null
 \newpage
-% Slide 23: Time evolution and the units of the exponent
+% Slide 29: Time evolution and the units of the exponent
 \null\vfill\[\begin{gathered}
 U(t)=e^{-iHt/\hbar},\qquad H^\dagger=H,\qquad \hbar=1\\[12pt]H=\frac{\Omega}{2}X\quad\Longrightarrow\quad U(t)=R_x(\Omega t)
 \end{gathered}\]\vfill\null
 \newpage
-% Slide 24: Matrix order matters
+% Slide 30: Matrix order matters
 \null\vfill\[\begin{gathered}
 XZ=-ZX,\qquad [X,Z]=XZ-ZX=-2iY\\[12pt]e^{A+B}=e^Ae^B\quad\text{is guaranteed when }AB=BA
 \end{gathered}\]\vfill\null
 \newpage
-% Slide 27: Independent numerical checks
+% Slide 33: Independent numerical checks
 \null\vfill\[\begin{gathered}
 \epsilon_U=\|U^\dagger U-I\|_{\mathrm F},\qquad\epsilon_{\rm ref}=\|U-U_{\rm analytic}\|_{\mathrm F}\\[12pt]r_k=\|Aq_k-\lambda_kq_k\|_2
 \end{gathered}\]\vfill\null
 \newpage
-% Slide 29: Appendix · Notation and dimensions
+% Slide 35: Appendix · Notation and dimensions
 \null\vfill\[\begin{gathered}
 |v\rangle:\ n\times1,\qquad \langle v|=|v\rangle^\dagger:\ 1\times n\\[12pt]\langle u|v\rangle:\ 1\times1,\qquad |u\rangle\langle v|:\ n\times n
 \end{gathered}\]\vfill\null
 \newpage
-% Slide 30: Proof of eigenvector orthogonality
+% Slide 36: Proof of eigenvector orthogonality
 \null\vfill\[\begin{gathered}
 Aq_j=\lambda_jq_j,\quad Aq_k=\lambda_kq_k,\quad A^\dagger=A\\[12pt]\lambda_k\,q_j^\dagger q_k=q_j^\dagger A q_k=\lambda_j\,q_j^\dagger q_k\\[12pt](\lambda_k-\lambda_j)\,q_j^\dagger q_k=0
 \end{gathered}\]\vfill\null
 \newpage
-% Slide 31: Appendix · Practice answers
+% Slide 37: Appendix · Practice answers
 \null\vfill\[\begin{gathered}
 u=\frac1{\sqrt2}\begin{pmatrix}1\\i\end{pmatrix},\qquad P=\frac12\begin{pmatrix}1&-i\\i&1\end{pmatrix}\\[12pt]e^{-iaZ}=\begin{pmatrix}e^{-ia}&0\\0&e^{ia}\end{pmatrix}=\cos(a)I-i\sin(a)Z
 \end{gathered}\]\vfill\null

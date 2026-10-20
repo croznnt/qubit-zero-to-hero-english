@@ -1,110 +1,137 @@
 [
   {
     "page": 1,
-    "slide": 2
+    "slide": 2,
+    "asset": 2
   },
   {
     "page": 2,
-    "slide": 3
+    "slide": 3,
+    "asset": 3
   },
   {
     "page": 3,
-    "slide": 4
+    "slide": 4,
+    "asset": 4
   },
   {
     "page": 4,
-    "slide": 5
+    "slide": 6,
+    "asset": 5
   },
   {
     "page": 5,
-    "slide": 6
+    "slide": 7,
+    "asset": 6
   },
   {
     "page": 6,
-    "slide": 7
+    "slide": 8,
+    "asset": 7
   },
   {
     "page": 7,
-    "slide": 8
+    "slide": 9,
+    "asset": 8
   },
   {
     "page": 8,
-    "slide": 9
+    "slide": 10,
+    "asset": 9
   },
   {
     "page": 9,
-    "slide": 10
+    "slide": 11,
+    "asset": 10
   },
   {
     "page": 10,
-    "slide": 11
+    "slide": 13,
+    "asset": 11
   },
   {
     "page": 11,
-    "slide": 12
+    "slide": 14,
+    "asset": 12
   },
   {
     "page": 12,
-    "slide": 13
+    "slide": 15,
+    "asset": 13
   },
   {
     "page": 13,
-    "slide": 14
+    "slide": 17,
+    "asset": 14
   },
   {
     "page": 14,
-    "slide": 15
+    "slide": 18,
+    "asset": 15
   },
   {
     "page": 15,
-    "slide": 16
+    "slide": 19,
+    "asset": 16
   },
   {
     "page": 16,
-    "slide": 17
+    "slide": 20,
+    "asset": 17
   },
   {
     "page": 17,
-    "slide": 18
+    "slide": 21,
+    "asset": 18
   },
   {
     "page": 18,
-    "slide": 19
+    "slide": 23,
+    "asset": 19
   },
   {
     "page": 19,
-    "slide": 20
+    "slide": 24,
+    "asset": 20
   },
   {
     "page": 20,
-    "slide": 21
+    "slide": 26,
+    "asset": 21
   },
   {
     "page": 21,
-    "slide": 22
+    "slide": 27,
+    "asset": 22
   },
   {
     "page": 22,
-    "slide": 23
+    "slide": 29,
+    "asset": 23
   },
   {
     "page": 23,
-    "slide": 24
+    "slide": 30,
+    "asset": 24
   },
   {
     "page": 24,
-    "slide": 27
+    "slide": 33,
+    "asset": 27
   },
   {
     "page": 25,
-    "slide": 29
+    "slide": 35,
+    "asset": 29
   },
   {
     "page": 26,
-    "slide": 30
+    "slide": 36,
+    "asset": 30
   },
   {
     "page": 27,
-    "slide": 31
+    "slide": 37,
+    "asset": 31
   }
 ]

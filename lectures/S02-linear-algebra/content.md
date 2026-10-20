@@ -1,6 +1,6 @@
 # S02: Vectors, matrices and operators
 
-28 core slides and 4 appendix slides. Mathematical expressions use LaTeX.
+28 original core slides, 6 visual explanations and 4 appendix slides. Mathematical expressions use LaTeX.
 
 ## 1. Vectors, matrices and operators
 
@@ -41,7 +41,15 @@ $$
 * Normalization divides every component by the same positive norm.
 * The zero vector cannot be normalized.
 
-## 5. Transpose, conjugate and adjoint
+## 5. Normalization preserves component ratios
+
+![Scientific illustration](assets/normalization.png)
+
+* The example vector has component magnitudes 1 and 1.
+* Dividing by √2 scales both magnitudes equally.
+* The sum of squared magnitudes changes from 2 to 1.
+
+## 6. Transpose, conjugate and adjoint
 
 $$
 \begin{gathered}
@@ -52,7 +60,7 @@ $$
 * Transpose exchanges rows and columns.
 * Adjoint conjugates every entry and then transposes.
 
-## 6. The complex inner product
+## 7. The complex inner product
 
 $$
 \begin{gathered}
@@ -64,7 +72,7 @@ $$
 * The inner product is a complex scalar.
 * Orthogonal vectors have inner product zero.
 
-## 7. Norm and overlap bound
+## 8. Norm and overlap bound
 
 $$
 \begin{gathered}
@@ -75,7 +83,7 @@ $$
 * The Euclidean norm is the nonnegative square root.
 * For normalized vectors, the squared overlap lies between zero and one.
 
-## 8. Example 2 · A complex orthogonality check
+## 9. Example 2 · A complex orthogonality check
 
 $$
 \begin{gathered}
@@ -86,7 +94,7 @@ $$
 * Both vectors have norm one, and their inner product vanishes.
 * Without conjugation, the same component sum would give i.
 
-## 9. Outer products are operators
+## 10. Outer products are operators
 
 $$
 \begin{gathered}
@@ -97,7 +105,7 @@ $$
 * An inner product gives a scalar. An outer product gives a matrix.
 * A normalized vector defines a projector onto its direction.
 
-## 10. Example 3 · A rank-one projector
+## 11. Example 3 · A rank-one projector
 
 $$
 \begin{gathered}
@@ -108,7 +116,15 @@ $$
 * The projector keeps u and removes its orthogonal direction v.
 * Its trace is one, matching its one-dimensional range.
 
-## 11. Hermitian operators
+## 12. Projection in a real plane
+
+![Scientific illustration](assets/projection.png)
+
+* Additional real example: project onto the line y = x.
+* The vector (2, 1) projects to (1.5, 1.5).
+* The dashed residual is perpendicular to that line.
+
+## 13. Hermitian operators
 
 $$
 \begin{gathered}
@@ -119,7 +135,7 @@ $$
 * A Hermitian matrix equals its own adjoint.
 * Its eigenvalues are real, and it has an orthonormal eigenbasis.
 
-## 12. Why Hermitian expectations are real
+## 14. Why Hermitian expectations are real
 
 $$
 \begin{gathered}
@@ -130,7 +146,7 @@ $$
 * A scalar equal to its own conjugate is real.
 * For a normalized state, this is the expectation of the observable A.
 
-## 13. Unitary operators preserve inner products
+## 15. Unitary operators preserve inner products
 
 $$
 \begin{gathered}
@@ -141,7 +157,15 @@ $$
 * A square unitary matrix preserves lengths and overlaps.
 * Its columns form an orthonormal basis.
 
-## 14. Hermitian and unitary are different tests
+## 16. A real rotation is a unitary example
+
+![Scientific illustration](assets/unitarity.png)
+
+* The real rotation turns (1, 0) by π/4.
+* Both endpoints lie on the unit circle.
+* A real orthogonal rotation is a special case of a unitary matrix.
+
+## 17. Hermitian and unitary are different tests
 
 $$
 \begin{gathered}
@@ -152,7 +176,7 @@ $$
 * Z passes both tests. 2Z is Hermitian but fails unitarity.
 * The diagonal U is unitary for real θ and generally is not Hermitian.
 
-## 15. Eigenvalues and eigenvectors
+## 18. Eigenvalues and eigenvectors
 
 $$
 \begin{gathered}
@@ -163,7 +187,7 @@ $$
 * An eigenvector keeps its direction under the linear map.
 * Its eigenvalue gives the complex scale factor.
 
-## 16. Hermitian eigensolvers and degeneracy
+## 19. Hermitian eigensolvers and degeneracy
 
 $$
 \begin{gathered}
@@ -175,7 +199,7 @@ $$
 * Use numpy.linalg.eigh for a Hermitian matrix.
 * Repeated eigenvalues define a subspace with many valid bases.
 
-## 17. Spectral decomposition
+## 20. Spectral decomposition
 
 $$
 \begin{gathered}
@@ -186,7 +210,7 @@ $$
 * This form applies here to a finite Hermitian matrix.
 * Each eigenprojector selects one orthonormal direction.
 
-## 18. Example 4 · The spectrum of Pauli X
+## 21. Example 4 · The spectrum of Pauli X
 
 $$
 \begin{gathered}
@@ -197,7 +221,15 @@ $$
 * The eigenvalues are +1 and −1.
 * The two eigenprojectors sum to the identity.
 
-## 19. Functions of a Hermitian matrix
+## 22. Eigenvectors of X in a real plane
+
+![Scientific illustration](assets/eigenvectors.png)
+
+* X exchanges the two real coordinates.
+* The plus direction stays fixed: eigenvalue +1.
+* The minus direction reverses: eigenvalue −1.
+
+## 23. Functions of a Hermitian matrix
 
 $$
 \begin{gathered}
@@ -208,7 +240,7 @@ $$
 * For polynomials and the exponential, apply f to the eigenvalues.
 * Elementwise application to the entries of A generally gives a different matrix.
 
-## 20. The matrix exponential series
+## 24. The matrix exponential series
 
 $$
 \begin{gathered}
@@ -220,7 +252,15 @@ $$
 * The series converges for every finite square matrix.
 * Use scipy.linalg.expm for numerical matrix exponentials.
 
-## 21. Pauli powers separate even and odd terms
+## 25. Two exponentials of the zero matrix
+
+![Scientific illustration](assets/exponential.png)
+
+* Both panels start from the same 2 × 2 zero matrix.
+* Matrix exponentiation gives the identity.
+* Elementwise exponentiation gives a matrix of ones.
+
+## 26. Pauli powers separate even and odd terms
 
 $$
 \begin{gathered}
@@ -231,7 +271,7 @@ $$
 * Even powers contribute an identity term. Odd powers contribute an X term.
 * Cosine and sine are the two scalar series.
 
-## 22. A closed form for an X rotation
+## 27. A closed form for an X rotation
 
 $$
 \begin{gathered}
@@ -242,7 +282,15 @@ $$
 * The angle θ is real and measured in radians.
 * At θ = π, the final state differs from |1⟩ only by a global phase.
 
-## 23. Time evolution and the units of the exponent
+## 28. X rotation changes measurement probabilities
+
+![Scientific illustration](assets/rotation.png)
+
+* The initial state is basis zero.
+* Both probabilities add to one at every angle.
+* At θ = π, outcome one has probability one.
+
+## 29. Time evolution and the units of the exponent
 
 $$
 \begin{gathered}
@@ -253,7 +301,7 @@ $$
 * This expression assumes a time-independent Hamiltonian.
 * The course uses time in μs and H/ℏ in rad/μs, so Ωt is dimensionless.
 
-## 24. Matrix order matters
+## 30. Matrix order matters
 
 $$
 \begin{gathered}
@@ -264,7 +312,7 @@ $$
 * Arbitrary matrices need not obey the scalar exponential product rule.
 * Check commutation before splitting an exponential.
 
-## 25. Code walkthrough 1 · NumPy and SciPy
+## 31. Code walkthrough 1 · NumPy and SciPy
 
 ```python
 import numpy as np
@@ -279,7 +327,7 @@ assert np.allclose(U, U_spec)
 
 * Use @ for matrix products and .conj().T for the adjoint.
 
-## 26. Code walkthrough 2 · QuTiP
+## 32. Code walkthrough 2 · QuTiP
 
 ```python
 import qutip as qt
@@ -292,9 +340,9 @@ assert np.allclose(Uq.full(), U)
 assert np.isclose(p1, np.sin(theta/2)**2)
 ```
 
-* This continues slide 25, with NumPy, θ and U already defined.
+* This continues slide 31, with NumPy, θ and U already defined.
 
-## 27. Independent numerical checks
+## 33. Independent numerical checks
 
 $$
 \begin{gathered}
@@ -305,14 +353,14 @@ $$
 * Check structure, a hand-derived reference and an eigenpair residual.
 * Unitarity alone cannot prove that U implements the intended rotation.
 
-## 28. Practice and exit checkpoint
+## 34. Practice and exit checkpoint
 
 * 1. Compute the adjoint and normalize the vector from Example 1.
 * 2. Build its projector and test its action on an orthogonal vector.
 * 3. Derive the exponential of an imaginary scalar times Pauli Z.
 * 4. Explain why unitary output alone cannot validate a rotation angle.
 
-## 29. Appendix · Notation and dimensions
+## 35. Appendix · Notation and dimensions
 
 $$
 \begin{gathered}
@@ -323,7 +371,7 @@ $$
 * T means transpose. A star means entrywise conjugation here.
 * A dagger means conjugate transpose. I is the identity operator.
 
-## 30. Proof of eigenvector orthogonality
+## 36. Proof of eigenvector orthogonality
 
 $$
 \begin{gathered}
@@ -334,7 +382,7 @@ $$
 * If the real eigenvalues differ, the inner product must be zero.
 * For a repeated eigenvalue, choose an orthonormal basis within its eigenspace.
 
-## 31. Appendix · Practice answers
+## 37. Appendix · Practice answers
 
 $$
 \begin{gathered}
@@ -345,7 +393,7 @@ $$
 * The zero vector has no normalized version.
 * Projector checks: Hermiticity, idempotence and action on its range.
 
-## 32. Running on Windows and Ubuntu
+## 38. Running on Windows and Ubuntu
 
 ```python
 Windows PowerShell, from the repository root

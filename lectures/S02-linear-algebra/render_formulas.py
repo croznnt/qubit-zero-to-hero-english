@@ -44,7 +44,7 @@ def main():
         candidates = [build/f"equation-{row['page']:02d}.png",
                       build/f"equation-{row['page']}.png"]
         source = next(path for path in candidates if path.exists())
-        shutil.copyfile(source, root/'assets'/f"formula-{row['slide']:02d}.png")
+        shutil.copyfile(source, root/'assets'/f"formula-{row.get('asset', row['slide']):02d}.png")
     print(f'Rendered {len(mapping)} LaTeX equations.')
 
 

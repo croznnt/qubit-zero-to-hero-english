@@ -1,6 +1,8 @@
 # S02: Vectors, matrices and operators
 
-The third lecture deck, following [S01](../S01-complex-numbers/README.md). It has 28 core slides and 4 appendices in English. Suggested delivery: two sessions of approximately 60 minutes, with a break after slide 14.
+The third lecture deck, following [S01](../S01-complex-numbers/README.md). It has 38 slides in English: 28 original core slides, 6 visual explanations and 4 appendices. Suggested delivery: two sessions of approximately 70 minutes, with a break after slide 17.
+
+Six numerical illustrations explain component normalization, orthogonal projection, a real unitary rotation, eigenvectors of Pauli X, matrix versus elementwise exponentiation, and X-rotation probabilities. They follow the corresponding derivations. `plot_illustrations.py` reproduces the figures using the course environment. The notes distinguish real-plane examples from complex-vector examples.
 
 1. [PowerPoint with speaker notes](deck.pptx)
 2. [PDF slides](deck.pdf)
