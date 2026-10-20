@@ -140,7 +140,9 @@ The Rabi experiment compares numerical populations with an analytic reference. T
 
 ## 🎓 Lecture slides
 
-[S00: Your first qubit simulation](lectures/S00-orientation/README.md) includes 12 core slides and 2 appendix slides in English, with PowerPoint, PDF, copyable commands and detailed instructor notes. It covers native Windows and Ubuntu setup, the first experiment and readiness checks. Later lecture decks are planned separately.
+[S00: Your first qubit simulation](lectures/S00-orientation/README.md) includes 12 core slides and 2 appendix slides in English, with PowerPoint, PDF, copyable commands and detailed instructor notes. It covers native Windows and Ubuntu setup, the first experiment and readiness checks.
+
+[S01: Complex numbers and phase](lectures/S01-complex-numbers/README.md) includes 20 core slides and 4 appendix slides, step-by-step formula explanations, three worked examples, scientific plots, NumPy and QuTiP walkthroughs, and standalone exercises with a reference solution. Run instructions cover Windows and Ubuntu. Later lecture decks are planned separately.
 
 ## 🤝 Contribute
 
