@@ -138,6 +138,10 @@ The Rabi experiment compares numerical populations with an analytic reference. T
 
 ![Rabi population and analytic reference](evidence/seed42/rabi/figure.png)
 
+## 🎓 Lecture slides
+
+[S00: Your first qubit simulation](lectures/S00-orientation/README.md) includes 12 core slides and 2 appendix slides in English, with PowerPoint, PDF, copyable commands and detailed instructor notes. It covers native Windows and Ubuntu setup, the first experiment and readiness checks. Later lecture decks are planned separately.
+
 ## 🤝 Contribute
 
 Follow [CONTRIBUTING.md](CONTRIBUTING.md). Add an independent check for a new physical model, document units and assumptions, and separate proposed extensions from measured results.
